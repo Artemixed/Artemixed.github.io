@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="EN">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A R T E M I S</title>
+    <link rel="stylesheet" href="style/styleC.css">
+    <link rel="shortcut icon" type="image/icon" href="data/favicon.ico">
+</head>
+
+<body>
+    <div class="banner">
+        <video autoplay muted loop>
+            <source src="achter.mp4" type="video/mp4">
+        </video>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <button class="openbtn" onclick="openNav()" id="bhome">&#9776</button>
+                </div>
+                <div class="col-10"></div>
+            </div>
+            <div class="row">
+                <div class="content">
+                    <h1 style="font-family:Helvetica">A R T E M I S</h1>
+                    <p style="font-family:calibri">Time is an illusion</p>
+                    <div><br><br><br>
+
+                        <p style="font-family:calibri; font-size: 17px;">This site was created in 2020 after many
+                            previous websites of mine.
+                            as of now it functions as a portal to my social channels and as an exercise to get familiar
+                            with HTML, CSS and JS.
+                            final goals for this site are not yet known. However, I do have ideas about this, such as
+                            using this site more actively to direct people to my creative expressions such as poems,
+                            photography and videography.
+                            in the (near) future more will be added to the site wich is certain but is still TBA.</p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html" style="font-family:Helvetica">Home</a>
+        <a href="photography.html" style="font-family:Helvetica">Photography</a>
+        <a href="contact.html" style="font-family:Helvetica">Contact</a>
+    </div>
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
+
+</body>
+
+</html>
